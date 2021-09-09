@@ -1,0 +1,22 @@
+env:
+
+    CIRRUS_CLONE_DEPTH: 1
+    
+    CIRRUS_WORKING_DIR: "/home"
+
+task:
+
+    name: Android Kernel Build
+
+    timeout_in: 120m # max 120m
+
+    container:
+
+      image: 54b1d/kernel_build:latest
+
+      cpu: 8 # max 8
+
+      memory: 32G # max 32G. rosy kernel builds takes less than 6GB with gcc 12
+
+    run_test_script:
+      - bash echo "Working"
