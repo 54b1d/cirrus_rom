@@ -12,11 +12,11 @@ task:
 
     container:
 
-      image: 54b1d/kernel_build:latest
+      image: 54b1d/rom_build:latest
 
       cpu: 8 # max 8
 
       memory: 32G # max 32G. rosy kernel builds takes less than 6GB with gcc 12
 
     run_test_script:
-      - bash echo "Working"
+      - bash ./run
