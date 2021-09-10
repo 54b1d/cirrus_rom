@@ -2,7 +2,7 @@ env:
 
     CIRRUS_CLONE_DEPTH: 1
     
-    CIRRUS_WORKING_DIR: "/home"
+    CIRRUS_WORKING_DIR: "~/home"
 
 task:
 
